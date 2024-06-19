@@ -36,7 +36,7 @@ const Index = () => {
         {jobListings.map((job, index) => (
           <JobListing key={index} {...job} />
         ))}
-        <Button as={Link} to="/post-job" colorScheme="teal" size="lg">Post a Job</Button>
+        <Button as={RouterLink} to="/post-job" colorScheme="teal" size="lg">Post a Job</Button>
       </VStack>
     </Container>
   );
